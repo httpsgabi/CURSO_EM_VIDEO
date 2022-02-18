@@ -1,0 +1,305 @@
+//Exercício 1  
+
+ algoritmo "Exercicio 1"
+// Data : 31/01/2022
+
+var
+msg: caractere
+inicio
+msg <- "Ola mundo"
+Escreval ("mensagem", msg)
+fimalgoritmo
+
+//Exercício 2
+
+algoritmo "Exercicio 2"
+// Data : 31/01/2022
+var
+nome_usuario: caractere
+inicio
+
+Escreval ("Ola usuario, digite o seu nome")
+Leia(nome_usuario)
+Escreval ("Ola ", nome_usuario, " seja bem vindo ao visualg")
+
+fimalgoritmo
+
+//Exercício 3
+
+algoritmo "Exercício 3"
+// Data : 31/01/2022
+var
+nome_usuario: caractere
+mes_salario: caractere
+salario_usuario: inteiro
+inicio
+
+Escreval ("Ola usuario seja bem vindo, digite o seu nome")
+Leia(nome_usuario)
+
+Escreval ("Agora digite o valor do seu salário e o mês referente: ")
+Leia (salario_usuario)
+Leia (mes_salario)
+
+Escreval (nome_usuario, "o seu salario e de :", salario_usuario, ". Mes referencia: ", mes_salario)
+
+fimalgoritmo
+
+//Exercício 4
+
+algoritmo "Exercício 4"
+// Data : 31/01/2022
+var
+nome_usuario: caractere
+num1: inteiro
+num2: inteiro
+inicio
+
+Escreval ("Ola usuario seja bem vindo, digite o seu nome")
+Leia(nome_usuario)
+
+Escreval ("Agora digite dois numeros para obter a soma entre eles:")
+
+Leia (num1)
+Leia (num2)
+
+Escreval("Ola ", nome_usuario, ", a soma entre", num1, "+", num2, " =", (num1 + num2))
+
+fimalgoritmo
+
+//Exercicio 5
+
+algoritmo "Exercicio 5"
+// Data : 02/02/2022
+var
+n1 n2: inteiro
+media: real
+materia:  caractere
+inicio
+Escreval ("Digite a materia desejada e posteriormente as duas notas do aluno para calcular a media")
+
+Leia (materia)
+Leia (n1)
+Leia (n1)
+
+media <- (n1 + n2)/2
+
+Escreval ("A media do aluno em ",materia,"  eh de: ", media)
+
+fimalgoritmo
+
+//Exercicio 6
+
+algoritmo "Exercicio 6"
+// Data : 02/02/2022
+var
+n: inteiro
+inicio
+Escreval ("Digite o numero para saber seu sucessor e seu antecessor")
+Leia(n)
+Escreval("O antecessor de ",n," eh: ",(n-1)," e o sucessor eh: ", (n+1))
+
+fimalgoritmo
+
+//Exercicio 7
+
+algoritmo "Exercicio 7"
+// Data : 02/02/2022
+var
+n: real
+inicio
+Escreval ("Digite o numero para saber seu dobro e a sua terca parte")
+Leia(n)
+Escreval("O dobro de ",n," eh: ",(n*2))
+Escreval("A terca parte de ",n," eh: ",(n/3))
+
+fimalgoritmo
+
+//Exercicio 8
+
+algoritmo "semnome"
+// Data : 02/02/2022
+
+var
+n: real
+inicio
+
+Escreva("Digite o numero em metros para saber sua equivalecia em outras medidas de comprimento")
+Leia(n)
+
+Escreval ("A distancia ",n,"  metros corresponde a:")
+Escreval ((n/1000),"km")
+Escreval ((n/100),"hm")
+Escreval ((n/10),"dam")
+Escreval ((n*10),"dm")
+Escreval ((n*100),"cm")
+Escreval ((n*1000),"mm")
+
+fimalgoritmo
+
+//Exercicio 9
+
+// Data : 03/02/2022
+
+var
+n, dolar: real
+
+inicio
+
+Escreva("Digite a quantidade de dinheiro que você possui em sua carteira:")
+Leia(n)
+
+dolar <- (3.45)
+
+Escreval ("Voce pode comprar: ", int(n/dolar) , " dolares")
+
+fimalgoritmo
+
+//Exercicio 10
+
+var
+n1, n2, area: real
+
+inicio
+
+Escreval("Digite a largura e a altura de sua parede em metros: ")
+
+Leia(n1)
+Leia(n2)
+
+area <- (n1*n2)
+
+Escreval("A area a ser pitada eh de ", area," metros ")
+Escreval("Voce ira utilizar ",int(area/2)," litros")
+
+fimalgoritmo
+
+//Exercicio 11
+
+// Data : 03/02/2022
+
+var
+A, B, C, delta: real
+
+inicio
+
+Escreval("Iremos calcular o valor de delta numa equacao do 2º grau, digite os valores de A, B e C: ")
+Escreva("A: ")
+Leia(A)
+Escreva("B: ")
+Leia(B)
+Escreva("C: ")
+Leia(C)
+
+delta <- ((B^2)-4*A*C)
+
+Escreval("O valor de delta eh: ", delta)
+
+fimalgoritmo
+
+//Exercicio 12
+
+// Data : 03/02/2022
+
+var
+n1, vlr_desc: real
+inicio
+
+
+Escreval("Digite o preco do produto para obter a quantidade de desconto")
+Leia(n1)
+
+vlr_desc <- (n1*(5/100))
+
+Escreval("O desonto obtido eh de: ", vlr_desc)
+Escreval("O produto passa a valer: ",(n1 - vlr_desc))
+
+fimalgoritmo
+
+//Exercicio 13
+
+// Data : 03/02/2022
+
+var
+n1, vlr_aumento: real
+inicio
+
+
+Escreval("Digite o valor do seu salario para obter a quantidade de aumetno")
+Leia(n1)
+
+vlr_aumento <- (1+(15/100))
+
+Escreval("Salario atual: ", n1)
+Escreval("O aumento obtido foi de: ", (n1*vlr_aumento) - n1)
+Escreval("O salario passa a valer: ",(n1*vlr_aumento))
+
+fimalgoritmo
+
+//Exercicio 14
+
+// Data : 03/02/2022
+ 
+var
+dias, kms, total_dias, total_kms: real
+inicio
+ 
+
+Escreval("Digite a quantidade de dias que está em posse do veículo: ")
+Leia(dias)
+Escreval("Digite a quantidade de Km's rodados com o veículo: ")
+Leia(kms)
+
+total_dias <- (dias*90)
+total_kms <- (kms*0.2)
+
+Escreval("O total pago pelos dias eh de: $", total_dias)
+Escreval("O total pago pelos Km's eh de: $", total_kms)
+
+Escreval("A quantidade total a ser paga eh de: $", (total_dias + total_kms))
+
+fimalgoritmo
+
+//Exercicio 15
+
+// Data : 03/02/2022
+var
+dias, horas_tot_dias, valor_tot_dias: real
+inicio
+
+Escreval("Digite a quantidade de dias trabalhados: ")
+Leia(dias)
+
+horas_tot_dias <- (dias*8)
+valor_tot_dias <- (horas_tot_dias*25)
+
+Escreval("A dua quantidade de horas trabalhadas eh de: ", horas_tot_dias)
+Escreval("O seu salario eh de: $", valor_tot_dias)
+
+fimalgoritmo
+
+//Exercicio 16
+
+// Data : 03/02/2022
+var
+cigarros_por_dia, anos_d_cigarro, cigarros_fumados_por_ano, minutos_perdidos: inteiro
+dias_perdidos: real
+
+inicio
+ Escreval("Iremos calcular sua reducao de vida baseada na quantidade de cigarrs que voce fuma")
+
+
+ Escreva("Digite a qantidade de cigarros que voce fuma por dia: ")
+ Leia(cigarros_por_dia)
+ 
+ Escreva("Digite a quantos anos voce fuma: ")
+ Leia(anos_d_cigarro)
+ 
+ cigarros_fumados_por_ano <- ((cigarros_por_dia*365)*anos_d_cigarro)
+ minutos_perdidos <- (cigarros_fumados_por_ano*10)
+ 
+ dias_perdidos <- (minutos_perdidos/1440)
+ 
+ Escreval("Voce ja perdeu ",int(dias_perdidos)," dias da sua vida")
+
+fimalgoritmo
