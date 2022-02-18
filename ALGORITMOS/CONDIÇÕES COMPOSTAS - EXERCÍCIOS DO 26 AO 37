@@ -1,0 +1,111 @@
+//Exercicio 26
+
+algoritmo "Exercício 26"
+// Data : 09/02/2022
+var
+   n1, n2: real
+inicio
+   Escreva("Escreva o numero 1: ")
+   Leia(n1)
+   Escreva("Escreva o numero 2: ")
+   Leia(n2)
+   
+   se (n1 = n2)entao
+      Escreval(n1, " eh igual a", n2)
+   senao
+        se (n1 > n2) entao
+           Escreval(n1, " eh maior que", n2)
+        senao
+             Escreval(n2," eh maior que", n1)
+        FimSe
+   FimSe
+   
+fimalgoritmo
+
+//Exercicio 27
+
+algoritmo "Exercício "
+// Data : 09/02/2022
+var
+   n1, n2, media: real
+inicio
+   Escreva("Escreva a nota 1: ")
+   Leia(n1)
+   Escreva("Escreva a nota 2: ")
+   Leia(n2)
+   
+   media <- ((n1 + n2)/2)
+   
+   se (media >= 7) entao
+      Escreval("O aluno foi APROVADO")
+   senao
+        se(media >= 5) E (media <= 6.9) entao
+          Escreval("O aluno esta em RECUPERACAO")
+        senao
+             Escreval("O aluno foi REPROVADO")
+        FimSe
+   FimSe
+   
+fimalgoritmo
+
+//Exercicio 28
+
+algoritmo "Exercício 28"
+// Data : 09/02/2022
+var
+   l1, l2, area: real
+inicio
+   Escreva("Digite o lado 1(m): ")
+   Leia(l1)
+   Escreva("Digite o lado 2(m): ")
+   Leia(l2)
+   
+   area <- (l1*l2)
+   
+   se (area > 500) entao
+      Escreval("O terreno eh um TERRENO VIP")
+   senao
+        se (area >= 100) E (area <= 500) entao
+           Escreval("O terreno eh um TERRENO MASTER")
+        senao
+             Escreval("O terreno eh um TERRENO POPULAR")
+        FimSe
+   FimSe
+fimalgoritmo
+
+//Exercicio 29
+
+algoritmo "Exercício 29"
+// Data : 09/02/2022
+var
+     nome: caractere
+     anos: inteiro
+     salario, aumento: real
+inicio
+      Escreva("Digite o nome do funcionario: ")
+      Leia(nome)
+      Escreva("Digite o tempo de empresa do funcionario (em anos): ")
+      Leia(anos)
+      Escreva("Digite o salario do funcionario: $")
+      Leia(salario)
+      
+      se (anos < 3) entao
+          aumento <- ((salario*3) /100)
+          Escreval("O aumento foi de: $",aumento)
+          Escreval("Salario ANTIGO: $", salario)
+          Escreval("Salario NOVO: $", (salario + aumento))
+      senao
+         se (anos >= 3) E (anos < 10)entao
+          aumento <- ((salario*12.5) /100)
+          Escreval("O aumento foi de: $",aumento)
+          Escreval("Salario ANTIGO: $", salario)
+          Escreval("Salario NOVO: $", (salario + aumento))
+         senao
+              aumento <- ((salario*20) /100)
+              Escreval("O aumento foi de: $",aumento)
+              Escreval("Salario ANTIGO: $", salario)
+              Escreval("Salario NOVO: $", (salario + aumento))
+         FimSe
+      FimSe
+
+fimalgoritmo
