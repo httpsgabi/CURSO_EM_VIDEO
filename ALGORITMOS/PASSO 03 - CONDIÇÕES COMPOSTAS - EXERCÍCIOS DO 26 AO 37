@@ -109,3 +109,32 @@ inicio
       FimSe
 
 fimalgoritmo
+
+algoritmo "Exercício 30"
+// Data : 07/09/2022
+var
+  L1, L2, L3: real
+inicio
+   Escreval("Digite o valor dos 3 segmentos de retas para saber se formam um triângulo")
+   Escreva("Lado | 1 : ")
+   leia(L1)
+   Escreva("Lado | 2 : ")
+   leia(L2)
+   Escreva("Lado | 3 : ")
+   leia(L3)
+
+   se (L1 < Abs(L2 - L3)) E (L2 < Abs(L1 - L3)) E (L3 < Abs(L1 - L2)) entao
+      se (L1 != L2) E (L2 != L3) E (L1 != L3) entao
+         Escreval("O triangulo existe, e eh ESCALENO")
+      FimSe
+      se (L1 = L2) E (L2 = L3) E (L1 != L3) entao
+         Escreval("O triangulo existe, e eh ISOCELES")
+      FimSe
+      se (L1 = L2) E (L2 = L3) entao
+         Escreval("O triangulo existe, e eh EQUILATERO")
+      FimSe
+   senao
+        Escreval("Os segmentos de retas nao formam um triangulo")
+   FimSe
+
+fimalgoritmo
