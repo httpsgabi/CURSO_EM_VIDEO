@@ -138,3 +138,196 @@ inicio
    FimSe
 
 fimalgoritmo
+
+algoritmo "Exercício 33"
+// Data : 15/9/2022
+var
+  valorCasa, salarioComprador, prestacaoBruta, prestacaoLiquida: real
+  anos, tempoTotalPagamento, porcentagemMaxima:inteiro
+inicio
+
+      Escreval("Digite o valor da residência desejada:")
+      Leia(valorCasa)
+      Escreval("Digite o valor do seu salario:")
+      Leia(salarioComprador)
+      Escreval("Em quantos anos deseja pagar?:")
+      Leia(anos)
+      
+      tempoTotalPagamento <- (anos * 12)
+      prestacaoBruta <- (valorCasa/tempoTotalPagamento)
+      prestacaoLiquida <- ((salarioComprador *30)/100)
+      
+      
+      Se (prestacaoBruta <= prestacaoLiquida) entao
+        Escreval("Financiamento liberado. O valor da prestação mensal será de:",prestacaoBruta)
+      Senao
+        Escreval("Financiamento negado, o valor das parcelas excede 30% do seu salário")
+      FimSe
+
+fimalgoritmo
+
+algoritmo "Exercício 34"
+// Data : 15/9/2022
+var
+   peso, altura, IMC: real
+   nome: caractere
+inicio
+      Escreval("Iremos calcular o seu Índice de Massa Corporal(IMC), e classificá-lo de acordo, por favor digite seu nome:")
+      Leia(nome)
+      Escreval("Agora digite seu peso:")
+      Leia(peso)
+      Escreval("Agora digite sua altura:")
+      Leia(altura)
+      
+      IMC <- (peso/(altura*altura))
+      
+      Se (IMC > 40) entao
+         Escreval("Você está em obesidade morbida")
+       Se (IMC >=30 ) E (IMC <= 40) entao
+          Escreval("Você está em obesidade ")
+        Se (IMC >=25 ) E (IMC <= 30) entao
+           Escreval("Você está em sobrepeso")
+         Se (IMC >=18.5 ) E (IMC <= 25) entao
+            Escreval("Você está no peso ideal")
+          Se (IMC < 18.5) entao
+             Escreval("Você está abaixo do peso")
+          FimSe
+         FimSe
+        FimSe
+       FimSe
+      FimSe
+      
+      Se (IMC < 18.5) entao
+         Escreval("Você está abaixo do peso")
+         senao
+       Se (IMC >=18.5 ) E (IMC <= 25) entao
+           Escreval("Você está no peso ideal")
+           senao
+        Se (IMC >=25 ) E (IMC <= 30) entao
+             Escreval("Você está em sobrepeso")
+             senao
+         Se (IMC >=30 ) E (IMC <= 40) entao
+               Escreval("Você está em obesidade ")
+               senao
+          Se (IMC > 40) entao
+                 Escreval("Você está em obesidade morbida")
+          FimSe
+         FimSe
+        FimSe
+       FimSe
+      FimSe
+fimalgoritmo
+
+algoritmo "Exercício 35"
+// Data : 15/9/2022
+var
+  tipoCarro, diasAlugados: inteiro
+  kmPercorrido, preco: real
+inicio
+   Escreval("Digite o tipo de carro escolhido:")
+   Escreval("1 | Carro Popular")
+   Escreval("2 | Carro de Luxo")
+   Leia(tipoCarro)
+   Escreval("Quantos dias de aluguel:")
+   Leia(diasAlugados)
+   Escreval("Quantos Km foram percorridos:")
+   Leia(kmPercorrido)
+   
+   Se (tipoCarro = 1) entao
+      Se (kmPercorrido <= 100) entao
+         preco <- ((diasAlugados * 90) + (kmPercorrido * 0.2))
+         Escreval("O valor a ser pago e de: $",preco)
+      senao
+         preco <- ((diasAlugados * 90) + (kmPercorrido * 0.1))
+         Escreval("O valor a ser pago e de: $",preco)
+      FimSe
+   senao
+        Se (kmPercorrido <= 200) entao
+         preco <- ((diasAlugados * 150) + (kmPercorrido * 0.3))
+         Escreval("O valor a ser pago e de: $",preco)
+      senao
+         preco <- ((diasAlugados * 150) + (kmPercorrido * 0.25))
+         Escreval("O valor a ser pago e de: $",preco)
+      FimSe
+   FimSe
+   
+fimalgoritmo
+
+algoritmo "Exercício 36"
+// Data : 15/9/2022
+var
+   tempoMin, tempoTot, pagamento, pontos: real
+inicio
+   Escreval("Escreva a quantidade de tempo em atividades físicas em minutos")
+   Leia(tempoMin)
+   
+   tempoTot <- (tempoMin/60)
+   
+   Se (tempoTot < 10) entao
+   pontos <- (tempoTot*2)
+   senao
+    Se (tempoTot >= 10) E (tempoTot <= 20) entao
+    pontos <- (tempoTot*5)
+    senao
+     Se (tempoTot > 20) entao
+     pontos <- (tempoTot*10)
+     FimSe
+    FimSe
+   FimSe
+   
+   pagamento <- (ponto * 0.05)
+   
+   Escreval("Voce caminhou um total de " tempoTot," e recebeu ",pagamento," por isso")
+   
+fimalgoritmo
+
+algoritmo "Exercício 37"
+// Data : 15/9/2022
+var
+   salario, aumento: real
+   anos, genero: inteiro
+inicio
+
+      Escreval("Digite o seu salario atual:")
+      Leia(salario)
+      Escreval("Digite o seu genero")
+      Escreval("1 | F")
+      Escreval("2 | M")
+      Leia(genero)
+      Escreval("Digite o seu tempo de servico em anos:")
+      Leia(anos)
+      
+      Se (genero = 1) entao
+         Se (anos < 15) entao
+         aumento <- (salario * (5/100))
+         Escreval("O aumento e de:",aumento," e o novo salario e de:",(salario + aumento))
+         senao
+              Se (anos >= 15) E (anos < 20) entao
+              aumento <- (salario * (12/100))
+              Escreval("O aumento e de:",aumento," e o novo salario e de:",(salario + aumento))
+              senao
+                    Se (anos > 20) entao
+                    aumento <- (salario * (23/100))
+                    Escreval("O aumento e de:",aumento," e o novo salario e de:",(salario + aumento))
+                    FimSe
+              FimSe
+         FimSe
+      FimSe
+
+      Se (genero = 2) entao
+         Se (anos < 20) entao
+         aumento <- (salario * (3/100))
+         Escreval("O aumento e de:",aumento," e o novo salario e de:",(salario + aumento))
+         senao
+               Se (anos >= 20) E (anos < 30) entao
+               aumento <- (salario * (13/100))
+               Escreval("O aumento e de:",aumento," e o novo salario e de:",(salario + aumento))
+               senao
+                     Se (anos > 30) entao
+                     aumento <- (salario * (25/100))
+                     Escreval("O aumento e de:",aumento," e o novo salario e de:",(salario + aumento))
+                     FimSe
+               FimSe
+         FimSe
+      FimSe
+fimalgoritmo
