@@ -1,1 +1,179 @@
+algoritmo "Exercício 38"
+// Data : 15/9/2022
+var
+  contador: inteiro
+inicio
 
+      contador <- 6
+
+      Enquanto (contador >=6) E (contador <=11) faca
+      Escreval(contador)
+      contador <- (contador + 1)
+      FimEnquanto
+
+      Escreval("Acabou!!!")
+
+fimalgoritmo
+
+algoritmo "Exercício 39"
+// Data : 15/9/2022
+var
+  contador: inteiro
+inicio
+
+      contador <- 10
+
+      Enquanto (contador >=3 ) E (contador <=10) faca
+      Escreval(contador)
+      contador <- (contador - 1)
+      FimEnquanto
+      
+      Escreval("Acabou!!!")
+
+fimalgoritmo
+
+algoritmo "Exercício 40"
+// Data : 15/9/2022
+var
+  contador: inteiro
+inicio
+
+      contador <- 0
+
+      Enquanto (contador >=0 ) E (contador <=18) faca
+      Escreval(contador)
+      contador <- (contador + 3)
+      FimEnquanto
+      
+      Escreval("Acabou!!!")
+
+fimalgoritmo
+
+algoritmo "Exercício 41"
+// Data : 15/9/2022
+var
+  contador: inteiro
+inicio
+
+      contador <- 100
+
+      Enquanto (contador >= 0 ) E (contador <=100) faca
+      Escreval(contador)
+      contador <- (contador - 5)
+      FimEnquanto
+      
+      Escreval("Acabou!!!")
+fimalgoritmo
+
+algoritmo "Exercicio 42"
+// Data : 17/9/2022
+
+var
+   cont, cont2, cont3: inteiro
+inicio
+
+      Escreval("Digite um valor inteiro e positvo")
+      Leia(cont)
+      
+      cont2 <- cont
+      cont3 <- 1
+      
+      Enquanto (cont.>=1) E (cont <= cont2)faca
+               Escreval(cont3)
+               cont3 <- (cont3 + 1)
+      FimEnquanto
+fimalgoritmo 
+
+algoritmo "Exercicio 42"
+// Data : 17/9/2022
+
+var
+   cont, cont2: inteiro
+inicio
+
+      Escreval("Digite um valor inteiro e positvo")
+      Leia(cont)
+
+      cont2 <- 1
+      
+      Enquanto (cont2 >= 1) E (cont2 <= cont)faca
+               Escreval(cont2)
+               cont2 <- (cont2 + 1)
+      FimEnquanto
+fimalgoritmo
+
+algoritmo "Exercicio 43"
+// Data : 17/9/2022
+var
+   cont, cont2, divisor: inteiro
+inicio
+
+      Escreval("Digite o numero onde quer começar a contar")
+      Leia(cont)
+      Escreval("Digite o numero divisor")
+      Leia(divisor)
+      
+      
+      cont2 <- cont
+      
+      Enquanto (cont2 >=1) E (cont2 <= cont) faca
+               Se ((cont2%divisor) = 0) entao
+                  Escreval("[",cont2,"]")
+               senao
+                    Escreval(cont2)
+               FimSe
+      cont2 <- (cont2 -1)
+      FimEnquanto
+
+fimalgoritmo
+
+algoritmo "Exercicio 44"
+// Data : 17/9/2022
+var
+   valInicio, valFinal, incremento, cont: inteiro
+inicio
+
+     Escreval("Digite o valor inicial da contagem:")
+     Leia(valInicio)
+     Escreval("Digite o valor final da contagem:")
+     Leia(valFinal)
+     Escreval("Digite o valor do incremento")
+     Leia(incremento)
+     
+     cont <- valInicio
+     
+     Enquanto (cont >= valInicio) E (cont <= valFinal) faca
+     Escreval(cont)
+     cont <- (cont + incremento)
+     FimEnquanto
+     
+fimalgoritmo
+
+algoritmo "Exercicio 45"
+// Data : 17/9/2022
+var
+   valInicio, valFinal, incremento, cont: inteiro
+inicio
+
+     Escreval("Digite o valor inicial da contagem:")
+     Leia(valInicio)
+     Escreval("Digite o valor final da contagem:")
+     Leia(valFinal)
+     Escreval("Digite o valor do incremento")
+     Leia(incremento)
+
+     cont <- valInicio
+
+     Se (valFinal > valInicio) entao
+        Enquanto (cont >= valInicio) E (cont <= valFinal) faca
+        Escreval(cont)
+        cont <- (cont + incremento)
+        FimEnquanto
+     senao
+        Enquanto (cont <= valInicio) E (cont >= valFinal) faca
+        Escreval(cont)
+        cont <- (cont - incremento)
+        FimEnquanto
+     FimSe
+
+fimalgoritmo
