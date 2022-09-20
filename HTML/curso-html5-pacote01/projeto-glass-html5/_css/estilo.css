@@ -1,0 +1,17 @@
+@charset"UTF-8";
+	
+body{
+	background-color:aliceblue;
+	color: rgba(0,0,0,1)
+	}
+	p{
+		text-align: justify;
+		text-indent: 30px;
+    }
+
+    /*Formatação de imagens com legenda*/
+ 
+    figure.foto-legenda {
+
+        border: 8px solid red;
+    }
