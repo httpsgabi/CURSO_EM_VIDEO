@@ -1,17 +1,40 @@
-@charset"UTF-8";
-	
-body{
-	background-color:aliceblue;
-	color: rgba(0,0,0,1)
-	}
-	p{
-		text-align: justify;
-		text-indent: 30px;
-    }
+@charset "UTF-8";
 
-    /*Formatação de imagens com legenda*/
- 
-    figure.foto-legenda {
+body {
+    background-color:white;
+    color: rgba(0,0,0,1);
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
 
-        border: 8px solid red;
-    }
+/*Formatação de imagem com legendas*/
+
+figure.foto-legenda{
+    position: relative;
+    border:8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcapition{
+    opacity:0;
+    position: absolute;
+    top:0px;
+    background-color: rgba(0,0,0,1);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
