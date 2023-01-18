@@ -121,3 +121,64 @@ nav#menu a:hover{
     color: #ffffff;
     text-decoration: underline;
 }
+
+section#corpo{
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px solid #606060; 
+    padding-right: 15px;
+}
+
+table#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+   border: 1px solid #606060; 
+   text-align: center;
+   vertical-align: middle;
+}
+
+table#tabelaspec td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color:#888888;
+    font-size:20pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float:right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 35 0px;
+    float: right;
+}
+
+footer#rodape {
+    clear:both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
+}
