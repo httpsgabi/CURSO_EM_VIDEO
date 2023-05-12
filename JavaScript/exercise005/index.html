@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+
+    <style>
+        body{
+            background-color: rgb(95, 107, 236);
+            color: white;
+            font: 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <div id="mensagem">Clique em mim</div>
+
+    <script>
+
+        //identificando por Marca
+            var corpo = window.document.body; // criando e definindo uma variável corpo que contem window
+            var p1 = window.document.getElementsByTagName('p')[0]; // criando , pegando e definindo p1 como primeiro parágrafo
+
+            p1.style.color = 'blue'; //mudando a cor de p1
+            corpo.style.background = 'black'; // mudando a cor do corpo
+
+            window.document.write('Está escrito no parágrafo 1: '+ p1.innerText); // innerText pega o texto sem formatação
+            window.document.write('</br>Está escrito no parágrafo 1: '+ p1.innerHTML); // innerHtml pega o texto com formatação
+
+        //Identificando por id    
+            /* var div = window.document.getElementById('mensagem');
+            div.style.background = 'green';
+            div.innerText = 'Estou aguardando'; */
+
+            //Identificando por seletor (Query)
+                var div = window.document.querySelector('div#mensagem');
+                div.style.background = 'green';
+
+        //Identificando por nome
+            var div2 = window.document.getElementsByTagName('mensagem')[0];
+            div2.innerText = 'Olá';
+        
+    </script>
+</body>
+</html>
