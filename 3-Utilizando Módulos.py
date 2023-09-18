@@ -20,4 +20,26 @@ lista_alunos = [aluno1, aluno2, aluno3, aluno4];
 sorteio = random.choice(lista_alunos);
 print('O aluno sorteado foi:', sorteio);
 
+
 # Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.
+
+import pygame
+
+pygame.init();
+pygame.mixer.music.load("caminho do arquivo mp3 que desejar");
+pygame.mixer.music.play();
+pygame.event.wait();
+
+
+#Crie um programa que leia o nome completo de uma pessoa e mostre: O nome com todas as letras maiúsculas e minúsculas, Quantas letras ao todo (sem considerar espaços), Quantas letras tem o primeiro nome.
+
+nome = str(input("Digite seu nome completo: "));
+
+print("Nome completo: {}".format(nome));
+print("Seu nome em minúsculas é: {}".format(nome.lower()));
+print("Seu nome em maiúsculas é: {}".format(nome.upper()));
+print("Seu nome tem {} letras".format(len(nome) - nome.count(' ')));
+
+separa_nome = nome.split();
+print("Seu primeiro nome é {} e tem {} letras".format(separa_nome[0], len(separa_nome[0])));
+
